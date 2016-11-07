@@ -1,0 +1,183 @@
+
+th {
+  text-align: left;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+}
+
+body{
+  background-image: url("/fondo.jpeg");
+}
+
+.fixed{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fixed li {
+  display: inline;
+  float: left;
+}
+
+.fixed li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family:monospace;
+  line-height:70px;
+  padding: 0px 70px 0 60px;
+
+}
+
+.fixed li:hover{
+  background-color: #30A9DA;
+}
+
+.top-nav {
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body h2 {
+  color: white;
+  font-family:fantasy;
+  font-size: 20px;
+  font-style:italic;
+  top: 0;
+  left: 0;
+  text-align: center;
+
+}
+
+h1{
+  font-family: cursive;
+  color: white;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.caja{
+  margin: 0 auto;
+  width: 600px;
+	border-radius: 6px;
+	padding: 45px 45px 20px;
+	margin-top: 50px;
+	box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px #EEF5F7 inset;
+  background-color:black ;opacity: 0.6;
+}
+.caja label{
+	display: block;
+	font-weight: bold;
+  color:white;
+}
+
+.profile{
+	display: block;
+	font-weight: bold;
+  color:white;
+  font-size: 30px;
+}
+.caja div{
+	margin-bottom: 15px;
+}
+.caja input[type='text'], .validacion textarea{
+	padding: 7px 6px;
+	width: 294px;
+	border: 1px solid #CED5D7;
+	resize: none;
+	box-shadow:0 0 0 3px #EEF5F7;
+	margin: 5px 0;
+
+}
+.caja input[type='text']:focus, .validacion textarea:focus{
+	outline: none;
+	box-shadow:0 0 0 3px #dde9ec;
+}
+.caja input[type='text'].invalido, .validacion textarea.invalido{
+	box-shadow:0 0 0 3px #FFC9C9;
+}
+
+.caja input[type='password'], .validacion textarea{
+	padding: 7px 6px;
+	width: 294px;
+	border: 1px solid #CED5D7;
+	resize: none;
+	box-shadow:0 0 0 3px #EEF5F7;
+	margin: 5px 0;
+
+}
+.caja input[type='password']:focus, .validacion textarea:focus{
+	outline: none;
+	box-shadow:0 0 0 3px #dde9ec;
+}
+.caja input[type='password'].invalido, .validacion textarea.invalido{
+	box-shadow:0 0 0 3px #FFC9C9;
+}
+
+.caja input[type='submit']{
+	border: 1px solid #CED5D7;
+	box-shadow:0 0 0 3px #EEF5F7;
+	padding: 8px 16px;
+	border-radius: 20px;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px white;
+
+	background: #e4f1f6;
+	background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+	background: -webkit-linear-gradient(top, #e4f1f6 0%,#cfe6ef 100%);
+}
+.caja input[type='submit']:hover{
+	background: #edfcff;
+	background: -moz-linear-gradient(top, #edfcff 0%, #cfe6ef 100%);
+	background: -webkit-linear-gradient(top, #edfcff 0%,#cfe6ef 100%);
+}
+.caja input[type='submit']:active{
+	background: #cfe6ef;
+	background: -moz-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+	background: -webkit-linear-gradient(top, #cfe6ef 0%,#edfcff 100%);
+}
+.error{
+    background-color: #BC1010;
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    padding: 6px 12px;
+    position: absolute;
+}
+.error:before{
+    border-color: transparent #BC1010 transparent transparent;
+    border-style: solid;
+    border-width: 6px 8px;
+    content: "";
+    display: block;
+    height: 0;
+    left: -16px;
+    position: absolute;
+    top: 8px;
+    width: 0;
+}
+.result_fail{
+    background: none repeat scroll 0 0 #BC1010;
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+}
+.result_ok{
+    background: none repeat scroll 0 0 #1EA700;
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+}
